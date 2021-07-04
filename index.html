@@ -5,26 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos.css">
+    <script src="validation.js" ></script>
     <title>Document</title>
 </head>
 <body>
-    <form action="" class="formulario">
+    <form action="conect.php" action="datos.php" method="post" class="formulario" onsubmit="return validate();">
       <h1 class="formulario__titulo">Termina tu pedido</h1> 
-        <input type="text" class="formulario__input">
+        <input id ="nombre" type="text" class="formulario__input" >
         <label for="" class="formulario__label">Nombre*</label>  
-        <input type="text" class="formulario__input">
-        <label for="" class="formulario__label">Teléfono*</label>  
-        <input type="text" class="formulario__input">
+        <input id ="telefono" type="text" class="formulario__input">
+        <label  for="" class="formulario__label">Teléfono*</label>  
+        <input id ="calles" type="text" class="formulario__input">
         <label for="" class="formulario__label">Calles*</label>  
-        <input type="text" class="formulario__input">
+        <input id ="numero_puerta" type="text" class="formulario__input">
         <label for="" class="formulario__label">Numero de puerta</label>  
-        <input type="text" class="formulario__input">
-        <label for="" class="formulario__label">Esquina</label>  
-        <input type="text" class="formulario__input">
+        <!--<input id ="esquina" type="text" class="formulario__input">
+        <label for="" class="formulario__label">Esquina</label>  --> 
+        <input id ="ciudad" type="text" class="formulario__input">
         <label for="" class="formulario__label">Ciudad*</label>  
-        <input type="text" class="formulario__input">
-        <label for="" class="formulario__label">Barrio</label>
-        <input type="submit" class="formulario__submit">   
+        <!--<input id ="barrio" type="text" class="formulario__input">
+        <label for="" class="formulario__label">Barrio</label>-->
+        <input id ="submit" type="submit" class="formulario__submit"> 
       
     </form>
     <script src="form.js"></script>
