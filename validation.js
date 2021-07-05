@@ -14,6 +14,10 @@ function validate(){
         alert("debe completar este campo")
         return false;
     }
+    else if(isNaN(telefono)){
+        alert("telefono debe ser un numero")
+        return false
+    }
     else if(calles===""){
         alert("debe completar este campo")
         return false;
@@ -27,8 +31,9 @@ function validate(){
         alert("debe completar este campo")
         return false;
     }
+   
     /*else if(!expresion.test(correo)){
-        alert("ingrese una direccion de cooreo valida")
+        alert("ingrese una direccion de correo valida")
 
     }*/
     /* agregar longitud maxima de los valores*/
