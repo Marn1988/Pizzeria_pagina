@@ -1,4 +1,5 @@
 <?php 
+
 // recibe datos de formulario
 include 'conect.php'; // incluye php de conexion a bd
 $nombre = $_POST["nombre"];
@@ -8,7 +9,7 @@ $numero_puerta = $_POST["numero_puerta"];
 $ciudad = $_POST["ciudad"];
 // envia datos a la base de datos
 
-$insert= "INSERT INTO formulario ('nombre','telefono','calles,numero_puerta','ciudad') VALUES('$nombre','$telefono','$calles','$numero_puerta','$ciudad')";
+$insert= "INSERT INTO formulario (nombre,telefono,calles,numero_puerta,ciudad) VALUES('$nombre','$telefono','$calles','$numero_puerta','$ciudad')";
 
 //ejecutar consulta
 
